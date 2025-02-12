@@ -2,6 +2,8 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
+#include <conio.h> 
+#include <atomic>
 
 class Timer {
 

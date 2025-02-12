@@ -1,7 +1,3 @@
-#include <iostream>
-#include <chrono>
-#include <thread>
-#include <conio.h> // _kbhit() and _getch()
 #include "Timer.h"
 
 using namespace std;
@@ -32,7 +28,6 @@ void Timer::start() {
             continue;
         }
 
-
         int minutes = secondsLeft / 60;
         int seconds = secondsLeft % 60;
 
@@ -60,7 +55,7 @@ void Timer::pause() {
 
 void Timer::resume() {
     isPaused = false;
-    std::cout << "Timer resumed.\n";
+    cout << "Timer resumed.\n";
 }
 
 void Timer::reset() {
